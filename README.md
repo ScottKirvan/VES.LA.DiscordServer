@@ -22,7 +22,7 @@
 	- flat permissions system with no verification or follow-up
 	- permissions managed per channel (unmanageable)
 	- a ton of unused channels 
-	- membership vetting isn't happening (unmanageable, so the server is effective public)
+	- membership vetting isn't happening (unmanageable, so the server is effectivly public)
 
 ### high level overview of proposed changes
 - define a required tiered permission system 
