@@ -13,8 +13,9 @@
 - set up actual mod roles that do have special permissions (future, not right away)
 - feeds - podcast feed
 
+---
 
-### goals
+# goals
 - create a way for members to communicate, socialize, and network together, and for them to be able to reach out to their board members
 - increase membership engagement and extend public education and outreach
 - support VES membership as a global organization, creating a space where industry nomadic members can network, stay in touch, and benefit from being a member of VES. 
