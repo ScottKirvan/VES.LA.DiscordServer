@@ -6,11 +6,11 @@
 # UPDATE 3/30 - The plan:
 
 - [ ] change permissions systems so that roles don't have permissions, channels do
+	- [ ] #blocked - I don't have adequate permissions yet
 - [X] set up actual mod roles that do have special permissions (future, not right away)- [ ] implement helpdesk based member number validation system
-- [ ] create public category - general chat area, introductions, off-topic, and the job board
+- [x] create public category - general chat area, introductions, off-topic, and the job board
 - [ ] welcome, rules, announcements, help/support will be in a top, animinstrative looking category
 - [ ] make MEE6 stop handing out permissions when people join
-
 - [ ] feeds - podcast feed
 
 ---
