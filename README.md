@@ -79,3 +79,7 @@ In terms of the BOMs, having them separate is really just nice for the members s
 	- is it funded? if so, what kind of budget?
 	- is there any backstop in place for continuity in case you don't run it someday?
 	- what's the permissions orginization? inherited per category? inherited per chan?  how are the levels or perms handled?
+
+### Resources
+https://colorfulqrcode.com/qr/url
+
