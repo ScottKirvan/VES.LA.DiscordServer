@@ -44,7 +44,7 @@ In the same way, the best way to handle the channel permissions is at the catego
 
 ## New Channels
 
-Right now we're trying to pair the server down to channels that are (or have a hope of becoming) active and those that are required.  I allowed WA to have a special channel for their committees because these committees had already demonstrated that they'd use them.  We do not want to add more inactive channels.  If you add a channel or a role that ends up not being used, please delete it.  
+Right now we're trying to pair the server down to channels that are (or have a hope of becoming) active and those that are required.  We do not want to add more inactive channels.  If you add a channel or a role that ends up not being used, please delete it.  
 
 ### Planning ahead
 It's easy to plan ahead, and our instinct, especially given the background a lot of us share, is to anticipate and put things in place before they're needed.  In our case, to keep things manageable, it's better to take a "Just in time" approach.  Creating a hundred channels, with a spiderweb of (potentially conflicting) permissions by imagining what will be useful or fun in the future creates a ton of overhead that may not ever get used.  
@@ -56,14 +56,16 @@ If someone asks for a new channel really consider it before creating it for them
 
 If a section channel's chat blows up into a lot of different topics and lots of threads -- so much so that trying to log in and catch up on the chatter becomes overwhelming, consider creating a forum for the members, so that they can self-organize the topics.  A forum is a great way to handle topics that are hot today but may die down in a few months or years.
 
-If you create a new channel, click the plus button on the category, don't click the private button -- the new channel will inherit the permissions of the category.  If you need a channel added, for example, for BOM members in a section, click private and add ONLY the VES BOM permission.  If you need anything other than those two situations, see the rules above to ensure it's an allowed channel type, and then check the "Special" section immediately below:
+If you create a new channel, click the plus button on the category, **don't click the private button** -- the new channel will inherit the permissions of the category.  If you need a channel added, for example, for BOM members in a section, click private and add ONLY the VES BOM permission.  If you need anything other than those two situations, see the rules above to ensure it's an allowed channel type, and then check the "Special" section immediately below:
 
 ### "Special"
-If someone asks for a channel with special permissions, pump the brakes and ask some questions -- "what's it for," and "who has access?"  The new channel can't break any of the rules above (it can't be more private than what's outlined up there), and whatever gets added as "special" is going to need special attention to maintain, keep current, etc.  By default, the only instance in which special attention is needed is when permissions are "partially" relaxed.  
+If someone asks for a channel with special permissions, pump the brakes and ask some questions -- "what's it for," and "who has access?"  The new channel can't break any of the rules above (it can't be more private than what's outlined up there -- it has to have, at a minimum, VES BOM permissions), and whatever gets added as "special" is going to need special attention to maintain, keep current, etc.  By default, the only instance in which special attention is needed is when permissions are "partially" relaxed.  
 
 By "partially relaxed," I mean, you have a channel that's read-only to one role, but can be written to by another (section specific announcements, for example), or where you need a way to allow members of a more general role (ves members) to have access to a channel (a sub-committee) without allowing everyone with that same (ves members) role access.  To do this, you need to create a new role and assign it to the particular users.
 
-In the example of granting a sub-group of membership into a protected channel, there is no direct and easy way to create a mutual exclusion like these in discord - permissions are additive only -- and this is exactly where things can get out of hand.  We currently have 19 separate roles that control access to channels.  That's 15 sections, ves general membership, bom members, and 2 special roles for WA.  If every sections wanted two extra roles, that's alone becomes 28 additional roles/permissions to keep track of.
+In the example of granting a sub-group of membership into a protected channel, there is no direct and easy way to create a mutual exclusion like these in discord - permissions are additive only -- and this is exactly where things can get out of hand.  We currently have 19 separate roles that control access to channels.  That's 15 sections, ves general membership, bom members, and 2 special roles for WA.  If every sections wanted two extra roles, that's alone becomes 28 additional roles/permissions to keep track of.  
+
+For right now, if you have something like a committee channel that needs to be available to non-bom committee members, create the channel, give the VES BOM role access to it, and add the individual non-bom members directly to the channel.
 
 ## Current Roles - explanations
 ### General
@@ -78,7 +80,7 @@ The position, top to bottom, of the list of roles in the server settings matters
 - VES Members
 	- These should be confirmed, active members of VES.  We have a mechanism so that VES members can opt in to any section they wish.  This is to reduce noise for the members that don't care what's going on in other sections, and to allow more nomadic members to stay part of any chapter they want to globally.  VES LA sort-of should be the most active section, so I could see a lot of members opting in to just see all the fun stuff LA does.
 - VES Australia 
-	- This and the roles below grant access to the section specific categories and channels.  Each section, by default, has a general chat channel available, and a BOM channel.  Remember, that BOM channel, even though it's in a sub-section, is visible to anyone globally with the VES BOM role.  If a member of the BOM wants to opt-out of the noise from sections other than their own, they can use the Browse Channels channel at the top left of the discord UI.
+	- This and the \<VES Section\> roles below grant normal member access to the section specific categories and channels.  Each section, by default, has a general chat channel available, and a BOM channel.  Remember, that BOM channel, even though it's in a sub-section, is visible to anyone globally with the VES BOM role.  If a member of the BOM wants to opt-out of the noise from sections other than their own, they can use the Browse Channels channel at the top left of the discord UI.
 - VES Bay Area
 - VES France
 - VES Georgia
@@ -92,9 +94,6 @@ The position, top to bottom, of the list of roles in the server settings matters
 - VES Toronto
 - VES Vancouver
 - VES Washington
-- WA Social Media Committee
-	- This, and the Events Committee below, are "Special" roles.  This way a section level manager (not one of us global admins) can use their power to assign roles to let specific non-BOM members into their sub-committees
-- WA Events & Sponsorships Committee
 - @everyone
 	- This is a built-in generic role that everyone that logs into the server gets.  Consider it the "Public" role.  Users with this role can't see any member's only content.
 
@@ -120,12 +119,24 @@ Permissions roles are intended to grant users specific powers, like moderation, 
 	- Anyone with this role is able to add or delete events (listed at the top-left of the UI)
 - (some misc bot roles)
 	- bots need powers.
+- Admin Australia 
+	- This and the \<Admin Section\> roles below grant the power to create channels, set permissions on those channels, and edit/delete/pin messages.  The assumption is that each section may want to modify the channels their users and BOM's want to use.  Admins granted this role must follow the rules outlined above when creating new channels.
+- Admin Bay Area
+- Admin France
+- Admin Georgia
+- Admin India
+- Admin London
+- Admin Los Angeles
+- Admin Montreal
+- Admin New York
+- Admin New Zealand
+- Admin Oregon
+- Admin Toronto
+- Admin Vancouver
+- Admin Washington
 
 
-
-
-
-## Aside:  Concerns
+## Asides/Concerns
 
 ### Moderation
 We currently have categories for non-english speaking VES sections.  This is dangerous as there's no way for us to moderate and/or monitor them.  We need dedicated moderators for each of these sections.
